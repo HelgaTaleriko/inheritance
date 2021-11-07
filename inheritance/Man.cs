@@ -10,16 +10,24 @@ namespace inheritance
         {
             Name = name;
             setAge(age);
+            setIsRetired();
         }
         private int age;
         public string Name { get; set; }
 
-        public int getThisAge()
+        private bool isRetired;
+        public static int RETIREMENT_AGE = 65;
+        public bool getIsRetired()
         {
-            return this.age;
+            return isRetired;
         }
+        public void setIsRetired()
+        {
+            isRetired = (age >= RETIREMENT_AGE) ? true : false;
+        }
+        
 
-        public int getAge()
+            public int getAge()
         {
             return age;
         }
@@ -27,11 +35,13 @@ namespace inheritance
         public void setAge(int age )
         {
            this.age=age;
+           setIsRetired();
         }
         
         public void Greet()
         {
-            Console.WriteLine("Привет ! Меня зовут " + Name + ", мне " + age + " лет.");
+            //setAge(age + 1);
+            Console.WriteLine("Привет ! Меня зовут " + Name + ", мне " + age + " лет. " + (isRetired ? "Я пенсионер" : "Я не пенсионер"));
         }
     }
 }
