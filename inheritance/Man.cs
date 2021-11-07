@@ -12,7 +12,7 @@ namespace inheritance
             setAge(age);
         }
         private int age;
-        private string Name { get; set; }
+        public string Name { get; set; }
 
         public int getThisAge()
         {
