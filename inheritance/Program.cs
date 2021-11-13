@@ -6,9 +6,9 @@ namespace inheritance
     {
         static void Main(string[] args)
         {
-            Man man1 = new Man("Витя", 45);
-            Man man2 = new Man("Оля алкаш", 25);
-            Woman woman1 = new Woman("Марина",59);
+            Man man1 = new Man("Витя",45);
+            Man man2 = new Man("Петя",56);
+            Woman woman1 = new Woman("Марина", 59);
             man1.Greet();
             man1.setAge(66);
             man1.Greet();
