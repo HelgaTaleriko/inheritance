@@ -10,10 +10,10 @@ namespace inheritance
             setAge(age);
             setIsRetired();
         }
-        private int age;
+        public int age;
         public string Name { get; set; }
 
-        private bool isRetired;
+        public bool isRetired;
         public static int RETIREMENT_AGE = 65;
         public bool getIsRetired()
         {
@@ -36,11 +36,11 @@ namespace inheritance
             setIsRetired();
         }
 
-        public void Greet()
+        public virtual void Greet()
         {
             Console.WriteLine("Привет ! Меня зовут " + Name + ", мне " + age + " лет. " + (isRetired ? "Я на пенсии" : "Я не на пенсии"));
         }
-        public void HappyBirthday()
+        public virtual void HappyBirthday()
         {
             setAge(age + 1);
             Console.WriteLine("Привет ! Меня зовут " + Name + ", мне исполнилось " + age + " лет. " + (isRetired ? "Я на пенсии" : "Я не на пенсии"));
