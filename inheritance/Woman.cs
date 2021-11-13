@@ -40,8 +40,12 @@ namespace inheritance
 
         public void Greet()
         {
-            //setAge(age + 1);
             Console.WriteLine("Привет ! Меня зовут " + Name + ", мне " + age + " лет. " + (isRetired ? "Я на пенсии" : "Я не на пенсии"));
+        }
+        public void HappyBirthday()
+        {
+            setAge(age + 1);
+            Console.WriteLine("Привет ! Меня зовут " + Name + ", мне исполнилось " + age + " лет. " + (isRetired ? "Я пенсионер" : "Я не пенсионер"));
         }
     }
 }
