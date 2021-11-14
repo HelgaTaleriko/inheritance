@@ -9,6 +9,10 @@ namespace inheritance
             Name = name;
             setAge(age);
             setIsRetired();
+        } 
+        public Human (string name)
+        {
+            Name = name;
         }
         public int age;
         public string Name { get; set; }

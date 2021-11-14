@@ -6,6 +6,10 @@
         {
 
         }
+        public Man (string name): base (name)
+        {
+
+        }
         public override void Greet()
         {
             System.Console.WriteLine("Привет! Я мужчина, меня зовут " + Name + ", мне " + age + " лет. " + (isRetired ? "Я на пенсии" : "Я не на пенсии"));
